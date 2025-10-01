@@ -1,0 +1,51 @@
+section.container {
+
+    .generate-box {
+        .inputs {
+
+            label {
+                display: flex;
+                aling-items: center;
+                gap: 10px;
+
+                .generate-box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    .inputs {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        label {
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+#output {
+    overflow: scroll;
+    max-width: 90vw;
+    max-height: 60vh;
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+                padding: 2px;
+                text-align: center;
+        }
+
+}
