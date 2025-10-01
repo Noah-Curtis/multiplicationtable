@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1034924-5c88-4e6f-b4eb-7c0207ad7f15" name="Changes" comment="save">
-      <change afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+    <list default="true" id="b1034924-5c88-4e6f-b4eb-7c0207ad7f15" name="Changes" comment="Clean Css">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/formjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,7 @@
       <updated>1758746218662</updated>
       <workItem from="1758746219956" duration="6100000" />
       <workItem from="1759178010188" duration="6907000" />
-      <workItem from="1759348448671" duration="3341000" />
+      <workItem from="1759348448671" duration="5486000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -107,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759350750695</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Clean Css">
+      <option name="closed" value="true" />
+      <created>1759351816694</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1759351816694</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +139,7 @@
     <MESSAGE value="table review" />
     <MESSAGE value="table review" />
     <MESSAGE value="save" />
-    <option name="LAST_COMMIT_MESSAGE" value="save" />
+    <MESSAGE value="Clean Css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean Css" />
   </component>
 </project>

@@ -38,14 +38,18 @@ section.container {
     max-width: 90vw;
     max-height: 60vh;
 
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
         }
 
-        td {
-                padding: 2px;
-                text-align: center;
+    tr:first-of-type, td:first-of-type, tr:last-of-type, td:last-of-type {
+        background-color: lightblue;
+    }
+
+    td {
+        padding: 2px;
+        text-align: center;
         }
 
 }
