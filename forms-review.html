@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Forms Review</title>
-    <link rel="stylesheet" href="forms-review.css">
+    <link rel="stylesheet" href="stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <section class="container">
-<h1>Multiplication Table Project</h1>
+    <h1>Multiplication Table Project</h1>
 
-<h3>Let's dive into the world of multiplication!</h3>
+    <h3>Let's dive into the world of multiplication!</h3>
 
-<div class="generate-box">
+    <div class="generate-box">
         <div class="inputs">
             <label for="rows" class="rows">Rows:
                 <input id="rows" type="number" min="1" max="100" step="1" value="10" placeholder="How many rows?">
@@ -21,10 +21,14 @@
             <label for="cols" class="cols">Columns:
                 <input id="cols" type="number" min="1" max="100" step="1" value="10" placeholder="How many columns?">
             </label>
+
+            <label for="highlight">Which to highlight?
+                <input id="highlight" type="number" min="1" max="100" step="1" value="5" placeholder="Highlight?">
+            </label>
         </div>
 
-        <button id="generate" onclick="createWithHtmlTable(getRowsDesired(), getColumnsDesired())">Generate!</button>
-</div>
+        <button id="generate" onclick="createWithHtmlTable(getRowsDesired(), getColumnsDesired(), getHighlightedValue())">Generate!</button>
+    </div>
     <section id="output"></section>
 </section>
 

@@ -1,55 +1,52 @@
 section.container {
 
     .generate-box {
+        display: flex;
+        /*flex-direction: column;*/
+        gap: 5px;
+        /*align-items: center;*/
+        align-content: center;
+
         .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
 
             label {
                 display: flex;
-                aling-items: center;
+                align-content: center;
                 gap: 10px;
 
-                .generate-box {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-
-                    .inputs {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 5px;
-
-                        label {
-                            display: flex;
-                            justify-content: space-between;
-                            gap: 10px;
-                        }
-                    }
+                input {
+                    width: 200px;
                 }
             }
         }
     }
-}
 
 
+    #output {
+        overflow: scroll;
+        max-width: 90vw;
+        max-height: 60vh;
 
-
-#output {
-    overflow: scroll;
-    max-width: 90vw;
-    max-height: 60vh;
-
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
         }
 
-    tr:first-of-type, td:first-of-type, tr:last-of-type, td:last-of-type {
-        background-color: lightblue;
+        tr:first-of-type, td:first-of-type, tr:last-of-type, td:last-of-type {
+            background-color: lightblue;
+        }
+
+        td {
+            padding: 2px;
+            text-align: center;
+        }
+
+        .highlight {
+            background-color: lightblue;
+        }
+
     }
-
-    td {
-        padding: 2px;
-        text-align: center;
-        }
-
 }
