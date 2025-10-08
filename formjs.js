@@ -51,6 +51,8 @@ function createWithHtmlTable(r, c, h) {
         string = 'provide inputs'
     }
 
-
+function getInputValueAsNumber(inputID) {
+        if document
+}
     document.getElementById("output").innerHTML = string;
 }
