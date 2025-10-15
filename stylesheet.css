@@ -1,52 +1,86 @@
-section.container {
+/* Standard CSS with non-Flexbox layout for containers */
 
-    .generate-box {
-        display: flex;
-        /*flex-direction: column;*/
-        gap: 5px;
-        /*align-items: center;*/
-        align-content: center;
+.container {
+    width: 70vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
 
-        .inputs {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
+.generate-box {
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
 
-            label {
-                display: flex;
-                align-content: center;
-                gap: 10px;
+.inputs {
+    display: block;
+    margin-bottom: 15px;
+}
 
-                input {
-                    width: 200px;
-                }
-            }
-        }
-    }
+.inputs label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
 
+.inputs input {
+    display: block;
+    width: 200px;
+    margin-top: 5px;
+    padding: 5px;
+}
 
-    #output {
-        overflow: scroll;
-        max-width: 90vw;
-        max-height: 60vh;
+/* --- Flexbox Grid Styling --- */
 
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+#output {
+    display: block;
+    overflow: auto;
+    max-width: 90vw;
+    max-height: 60vh;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* Optional: Center the grid if it's smaller than the output box */
+    text-align: center;
+}
 
-        tr:first-of-type, td:first-of-type, tr:last-of-type, td:last-of-type {
-            background-color: lightblue;
-        }
+.multiplication-grid {
+    /* Ensures the grid is horizontally centered within the #output container */
+    display: inline-block;
+}
 
-        td {
-            padding: 2px;
-            text-align: center;
-        }
+.grid-row {
+    /* **REQUIRED: Makes the cells display horizontally** */
+    display: flex;
+    flex-wrap: nowrap;
+}
 
-        .highlight {
-            background-color: lightblue;
-        }
+.grid-cell {
+    /* Cell styling */
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    font-size: 1.1em;
 
-    }
+    /* Flex item properties */
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+
+    /* Use inner flex to center the number perfectly inside the cell */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Highlight style for the squared cell */
+.grid-cell.highlight {
+    background-color: #ffeb3b;
+    font-weight: bold;
+    color: #333;
+    border: 2px solid #fbc02d;
 }
