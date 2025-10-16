@@ -1,39 +1,44 @@
-/* Standard CSS with non-Flexbox layout for containers */
+/* --- 1. General Container and Input Styles --- */
 
 .container {
     width: 70vw;
     min-height: 100vh;
     margin: 0 auto;
     padding-top: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .generate-box {
-    display: inline-block;
+    display: flex;
+    gap: 20px;
     padding: 15px;
-    border: 1px solid #ccc;
     margin-bottom: 20px;
+    align-items: flex-end;
 }
 
 .inputs {
-    display: block;
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .inputs label {
-    display: block;
-    margin-bottom: 10px;
-    text-align: left;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
 }
 
 .inputs input {
     display: block;
-    width: 200px;
-    margin-top: 5px;
+    width: 100px;
     padding: 5px;
+    margin-top: 0;
 }
 
-/* --- Flexbox Grid Styling --- */
+/* --- 2. Output Area and Flexbox Grid Structure --- */
 
 #output {
     display: block;
@@ -41,46 +46,55 @@
     max-width: 90vw;
     max-height: 60vh;
     margin: 0 auto;
-    border: 1px solid #ccc;
     padding: 10px;
-    /* Optional: Center the grid if it's smaller than the output box */
     text-align: center;
 }
 
+/* column of rows */
 .multiplication-grid {
-    /* Ensures the grid is horizontally centered within the #output container */
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
-
+/* row of cells */
 .grid-row {
-    /* **REQUIRED: Makes the cells display horizontally** */
     display: flex;
     flex-wrap: nowrap;
 }
 
 .grid-cell {
-    /* Cell styling */
     padding: 8px;
     text-align: center;
-    border: 1px solid #ccc;
-    font-family: monospace;
-    font-size: 1.1em;
+    border: 1px solid black;
 
-    /* Flex item properties */
     flex-shrink: 0;
     width: 50px;
     height: 50px;
 
-    /* Use inner flex to center the number perfectly inside the cell */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Highlight style for the squared cell */
-.grid-cell.highlight {
-    background-color: #ffeb3b;
+
+.top-header-cell,
+.left-header-cell {
+    background-color: gray;
     font-weight: bold;
-    color: #333;
-    border: 2px solid #fbc02d;
+}
+
+.corner-cell {
+    background-color: lightgray;
+}
+
+
+.top-header-highlight,
+.left-header-highlight {
+    background-color: yellow;
+}
+
+.grid-cell.highlight-center {
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
 }
